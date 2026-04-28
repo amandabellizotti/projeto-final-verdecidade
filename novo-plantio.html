@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Plantio</title>
+</head>
+<body>
+    <header>
+        <button type="submit" onclick="window.location.href='novo-plantio.html'">Novo Plantio</button>
+        <button type="submit" onclick="window.location.href='mapa-hortas.html'">Mapa de Hortas</button>
+    </header>
+
+    <section id="novo-plantio">
+        <h1>Novo Plantio</h1>
+        <form id="form-novo-plantio">
+            <label for="nome-plantio">Nome do Plantio:</label>
+            <input type="text" id="nome-plantio" name="nome-plantio" required>
+            <br>
+            <label for="localizacao">Localização:</label>
+            <input type="text" id="localizacao" name="localizacao" required>
+            <br>
+            <label for="data-plantio">Data do Plantio:</label>
+            <input type="date" id="data-plantio" name="data-plantio" required>
+            <br>
+            <button type="submit">Registrar Plantio</button>
+             <button type="button" onclick="window.location.href='painel-controle.html'">Voltar</button>
+    </section>
+</body>
+</html>
