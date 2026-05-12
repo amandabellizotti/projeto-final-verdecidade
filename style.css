@@ -30,7 +30,7 @@ form button{
 main {
     padding: 0px;
     flex: 1; 
-    align-items: center;    
+    
     justify-content: center;
 }
 
@@ -50,18 +50,17 @@ div.card-login, section#novo-plantio {
     justify-self: center;
     align-items: center;
     background-color: #f2f2f2;
-    padding: 20px;
+    padding: 50px;
     border-radius: 8px;
-    width: 500px;
+    
 }
 
 div.card-login h2 {
-    margin-top: 0;
     font-size: 30px;
     font-weight: 16px;
 }
 
-input form, input#nome, input#quantidade, input#area, input#localizacao, input#data-plantio {
+input form, input#nome-plantio, input#quantidade, input#area, input#localizacao, input#data-plantio {
     border: none;
     margin-bottom: 10px;
 }
