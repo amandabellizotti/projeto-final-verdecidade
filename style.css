@@ -28,7 +28,7 @@ form button{
 }
 
 main {
-    padding: 0px;
+    padding: 20px;
     flex: 1; 
     
     justify-content: center;
@@ -53,6 +53,11 @@ div.card-login, section#novo-plantio {
     padding: 50px;
     border-radius: 8px;
     
+}
+
+main h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 div.card-login h2 {
