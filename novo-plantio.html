@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Novo Plantio</title>
 </head>
 <body>
+    <main>
     <header>
+        <h1>Horta Urbana</h1>
+        <button type="submit" onclick="window.location.href='painel-controle.html'">Painel de Controle</button>
         <button type="submit" onclick="window.location.href='novo-plantio.html'">Novo Plantio</button>
         <button type="submit" onclick="window.location.href='mapa-hortas.html'">Mapa de Hortas</button>
     </header>
@@ -15,16 +19,32 @@
         <h1>Novo Plantio</h1>
         <form id="form-novo-plantio">
             <label for="nome-plantio">Nome do Plantio:</label>
-            <input type="text" id="nome-plantio" name="nome-plantio" required>
+            <input type="text" id="nome-plantio" name="nome-plantio" placeholder="Nome do Canteiro" required>
             <br>
+
+            <label for="quantidade">Quantidade de insumos:</label>
+            <input type="number" id="quantidade" name="quantidade" required>
+            <br>
+
+            <label for="area">Area</label>
+            <input type="number" id="area" name="area" required>
+            <br>
+
             <label for="localizacao">Localização:</label>
-            <input type="text" id="localizacao" name="localizacao" required>
+            <input type="text" id="localizacao" name="localizacao" placeholder="Localização do Canteiro" required>
             <br>
+
             <label for="data-plantio">Data do Plantio:</label>
             <input type="date" id="data-plantio" name="data-plantio" required>
             <br>
-            <button type="submit">Registrar Plantio</button>
-             <button type="button" onclick="window.location.href='painel-controle.html'">Voltar</button>
+
+            <button type="button" onclick="novoPlantio()">Registrar Plantio</button>
+             
     </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 ONG VerdeCidade - Tecnologia para o Bem.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

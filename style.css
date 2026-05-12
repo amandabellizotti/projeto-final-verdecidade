@@ -1,0 +1,82 @@
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+body {
+    margin:0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+header button{
+    border: none;
+    border-radius: 2px;
+    font-size: 15px;
+    background-color: #c9ffcb;
+    color:#032a03
+}
+
+form button{
+    border: none;
+    border-radius: 2px;
+    background-color: #c9ffcb;
+}
+
+main {
+    padding: 0px;
+    flex: 1; 
+    align-items: center;    
+    justify-content: center;
+}
+
+div#container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    
+}
+
+/*card centralizado*/
+div.card-login, section#novo-plantio {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    width: 500px;
+}
+
+div.card-login h2 {
+    margin-top: 0;
+    font-size: 30px;
+    font-weight: 16px;
+}
+
+input form, input#nome, input#quantidade, input#area, input#localizacao, input#data-plantio {
+    border: none;
+    margin-bottom: 10px;
+}
+
+div.apresentacao {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

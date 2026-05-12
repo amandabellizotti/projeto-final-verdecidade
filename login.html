@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>VerdeCidade</title>
 </head>
 <body>
@@ -10,63 +11,34 @@
         <h1>VerdeCidade</h1>
     </header>
 
-    <section id="login">
-    <div class="botao">
-        <button type="button" id="botao-voluntario">Login voluntário</button>
-        <button type="button" id="botao-cadastro-voluntario">Cadastro voluntário</button>
-        <button type="button" id="botao-ong">Login ONG</button>
+    <main>
 
-    </div>
-    </section>
-
-    <div class="card-login" id="card-login" style="display: none;">
-        <h2>Login Voluntário</h2>
+    <div class="card-login" id="card-login" >
+        <h2>LOGIN </h2>
         <form id="form-login-voluntario">
-            <label for="email-voluntario">Email:</label>
-            <input type="email" id="email-voluntario" name="email" required>
+            <label for="usuario">Usuário:</label>
+            <input type="usuario" id="usuario" name="usuario" required>
+            <br><br>    
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
             <br>
-            <label for="senha-voluntario">Senha:</label>
-            <input type="password" id="senha-voluntario" name="senha" required>
-            <br>
-            <button type="submit" onclick="window.location.href='painel-controle.html'">Entrar</button>
-        </form>
-    </div>
-
-    <!-- esse direciona para a pagina de login voluntario -->
-    <div class="card-login" id="card-login" style="display: none;">
-        <h2>Cadastro</h2>
-        <form id="form-cadastro-voluntario">
-            <label for="email-voluntario">Email:</label>
-            <input type="email" id="email-voluntario" name="email" required>
-            <br>
-            <label for="senha-voluntario">Senha:</label>
-            <input type="password" id="senha-voluntario" name="senha" required>
-            <br>
-            <label for="persona">Tipo de usuário:</label>
-            <select name="persona" id="persona">
+            <!---- <label for="persona">Tipo de usuário:</label>
+             <select name="persona" id="persona" required>
                 <option value="voluntario">Voluntário</option>
                 <option value="ong">ONG</option>
             </select>
-            <button type="submit" onclick="window.location.href='login.html'">Cadastrar</button>
+            <br> -->
+            <button type="button" onclick="fazerLogin()">Entrar</button>
         </form>
     </div>
 
-    <div class="card-login" id="card-login" style="display: none;">
-        <h2>Login ONG</h2>
-        <form id="form-login-ong">
-            <label for="email-ong">Email:</label>
-            <input type="email" id="email-ong" name="email" required>
-            <br>
-            <label for="senha-ong">Senha:</label>
-            <input type="password" id="senha-ong" name="senha" required>
-            <br>
-            <button type="submit" onclick="window.location.href='painel-controle.html'">Entrar</button>
-        </form>
-    </div>
+   
+    </main>
 
     <footer>
         <p>&copy; 2026 ONG VerdeCidade - Tecnologia para o Bem.</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

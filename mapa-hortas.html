@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Mapa de Hortas</title>
 </head>
 <body>
@@ -12,6 +13,7 @@
         <button type="submit" onclick="window.location.href='novo-plantio.html'">Novo Plantio</button>
         <button type="submit" onclick="window.location.href='mapa-hortas.html'">Mapa de Hortas</button>
     </header>
+    <main>
     <div class="apresentacao">
         <p>Explore o mapa de hortas comunitárias em nossa cidade! Encontre hortas próximas a você, veja detalhes sobre cada uma e participe da comunidade verde. Juntos, podemos cultivar um futuro mais sustentável!</p>
     </div>  
@@ -21,7 +23,7 @@
         <p>Contato: (11) 98765-4321</p>
     </div>
     <div class="mapa">
-        <img src="mapa-hortas.png" alt="Mapa de Hortas Comunitárias">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14362.49638968275!2d-50.87573386542602!3d-21.803997581331654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1778002727879!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
         <div class="informacao">
             <h2>Horta Comunitária do Parque Central</h2>
@@ -40,5 +42,10 @@
         </div>
 
     </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 ONG VerdeCidade - Tecnologia para o Bem.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
